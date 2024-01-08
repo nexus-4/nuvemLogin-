@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>
+            Meu Site
+        </h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        <menu id="itens">
+            <ul>
+                <li> <a href="#">Opcao 1</a> </li>
+                <li> <a href="#">Opcao 2</a> </li>
+                <li> <a href="#">Opcao 3</a></li>
+                <li> <a href="#">Opcao 4</a> </li>
+                <li> <a href="#">Opcao 5</a> </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1> Algum titulo</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor vel modi obcaecati. Nesciunt sequi tempore neque quibusdam corporis quis eligendi aut aliquid dolore id laudantium, assumenda inventore deserunt? Repellat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur alias sed quia ab consectetur, perspiciatis, saepe dolorum aut rem, maiores voluptatum quis tempore hic id nesciunt minus ullam? Facilis, explicabo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem aliquid, velit ullam nobis laboriosam perspiciatis inventore tempore. Quidem, quo sequi quam error cumque eligendi minima aut debitis provident asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam expedita possimus sequi voluptatum ratione perferendis ipsa aliquam excepturi fuga nihil veritatis incidunt, tempore consequuntur facere necessitatibus nemo. Facilis, tenetur culpa?</p>
+
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display =='block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -73,6 +73,10 @@ main {
 .campo label {
     display: none;
 }
+.campo > input[type=email], input[type=password] {
+    height: 28px;
+    width: 80%;
+}
 
 form > input[type=submit] {
     display: block;

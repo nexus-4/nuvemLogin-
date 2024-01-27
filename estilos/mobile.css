@@ -42,17 +42,35 @@ body {
     background-color: rgba(139, 207, 255, 0);
 }
 #imagemDiv > .nuvem{
+    position: relative;
     background-color: rgb(230, 230, 230);
     border-radius: 100px;
     width: 250px;
     height: 105px; 
-    box-shadow: 0px 1px 10px 1px white;
+    overflow: visible;
+}
+.nuvem::before {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    right: -10px;
+    box-sizing: border-box;
+
+    content: '';
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background: inherit;
+    background-color: rgb(230, 230, 230);
+    
 }
 .nuvem::after {
     position: absolute;
-    top: 70px;
+    top: -60px;
     right: -10px;
-    left: 205px;
+    left: 80px;
 
     box-sizing: border-box;
 
@@ -65,23 +83,6 @@ body {
     background: inherit;
     background-color: rgb(230, 230, 230);
     
-    
-}
-.nuvem::before {
-    position: absolute;
-    top: 99px;
-    left: 160px;
-    right: -10px;
-    box-sizing: border-box;
-
-    content: '';
-    z-index: 1;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-
-    background: inherit;
-    background-color: rgb(230, 230, 230);
     
 }
                                                 /* estilo do texto intro */
@@ -123,7 +124,7 @@ body {
 }
 #inome, #isenha {
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.204);
+    background-color: rgba(255, 255, 255, 0.547);
     width: 300px;
     padding: 10px;
     border-radius: 20px;
@@ -131,6 +132,7 @@ body {
 }
 
 #botaoDiv {
+    height: 100px;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -142,8 +144,12 @@ body {
     background-color: white;
     width: 80px;
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 20px;
     border-style: none;
+}
+#entrarBtn:hover {
+    border: 1px solid yellow;
+    cursor: pointer;
 }
 

@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
-    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/desktop.css">
+    <title>Login Page</title>
 </head>
 <body>
-    <main>
-        <section id="login">
-            
-            <div id="imagem"></div>
-           
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja-Bem vindo!<br> Faca seu login para entrar no site.</p>
-            
+    <section id="sectionDiv">
 
-                <form action="cadastro.php" autocomplete="on" method="post">
-                    <div class="campo">
-                        <i class="material-icons">person</i>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu email" required autocomplete="email" maxlength="30">
-                        <label for="ilogin">Login</label>
-                    </div>
-                    
-                    <div class="campo">
-                        <i class="material-icons">vpn_key</i>
-                        <input type="password" name="Senha" id="isenha" required placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="20">
-                        <label for="isenha">Senha</label>
-                    </div>
+        <div id="imagemDiv">
+            <div class="nuvem"></div>
+        </div>
 
-                    <input type="submit" value="Entrar">
-                    <a href="#" class="botao">Esqueci a senha 
-                        <i class="material-icons">mail</i>
-                    </a>
-                </form>
+        <div id="introTextoDiv">
+            <h1>Bem Vindo!</h1>
+            <p>Faça Login para continuar.</p>
 
-            </div>  
+        </div>
 
-        </section>
-    </main>
+        <div id="formularioDiv">
+            <form id="formDiv" method="post" autocomplete="on">
+
+                <div id="usuarioDiv">
+                    <label for="inome">Usuario:</label>
+                    <input type="text" name="txtUsuario" id="inome" required minlength="5" maxlength="20">
+                </div>
+
+                <div id="senhaDiv">
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="txtSenha" id="isenha">
+                </div>
+
+                <div id="botaoDiv">
+                    <input id="entrarBtn" type="button" value="Entrar">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+            </form> 
+
+        </div>
+
+
+    </section>
     
 </body>
 </html>

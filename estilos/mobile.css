@@ -19,7 +19,7 @@ body {
                                                 /* estilo section div*/
 #sectionDiv {
     background-color: rgba(184, 195, 255, 0.173) ;
-    width: 480px;
+    width: 390px;
     height: 75%;
 
     border-radius: 7px;
@@ -122,12 +122,12 @@ body {
 
 }
 #inome, #isenha {
-
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.204);
     width: 300px;
     padding: 10px;
     border-radius: 20px;
     border-style: none;
-
 }
 
 #botaoDiv {
@@ -139,6 +139,7 @@ body {
     
 }
 #entrarBtn {
+    background-color: white;
     width: 80px;
     padding: 10px;
     margin: 10px;

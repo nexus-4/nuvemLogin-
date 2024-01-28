@@ -9,7 +9,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: linear-gradient( blue,rgb(83, 107, 248),white);
+    background-color: rgb(31, 31, 255);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -18,6 +18,7 @@ body {
                                                 /* estilo section div*/
 #sectionDiv {
     background-color: rgba(184, 195, 255, 0.173) ;
+    transition: width 1.2 ease-in-out;
     width: 390px;
     height: 75%;
 

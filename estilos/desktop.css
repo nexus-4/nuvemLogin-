@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    @keyframes transform {
+        from {
+            transform: translate(0%);
+        }
+        to {
+            transform: translate(-4%, 3%);
+        }
+    }
+
+    body {
+        background-image: linear-gradient(blue, rgb(83, 107, 248), white);
+    }
+
+    #sectionDiv {
+        transition: width 1.2s ease-in-out;
+        width: 600px;
+        font-size: 1.2em;
+    }
+
+    #imagemDiv {
+        animation: transform 5s ease-in-out infinite alternate;
+    }
+}

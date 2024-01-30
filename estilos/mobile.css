@@ -138,7 +138,6 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    
 }
 #entrarBtn {
     background-color: white;
@@ -149,7 +148,15 @@ body {
     border-style: none;
 }
 #entrarBtn:hover {
-    border: 1px solid yellow;
+    border: 2px solid rgb(255, 255, 0);
     cursor: pointer;
+}
+#botaoDiv a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#botaoDiv a:hover {
+    color: rgb(255, 255, 0);
+
 }
 
